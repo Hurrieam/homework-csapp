@@ -1,0 +1,34 @@
+/**index.wxss**/
+.background {
+  background-color: white;
+}
+
+.textarea {
+  background-color: whitesmoke;
+  border: solid 2px green;
+}
+
+.textarea:hover {
+  background-color: white;
+}
+
+.msg {
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+.copyright {
+  position: relative;
+  color: black;
+  text-align: center;
+}
+
+.share {
+  border: solid 1px green;
+  background-color: whitesmoke;
+}
+
+.share:hover {
+  background-color: greenyellow;
+}

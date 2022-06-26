@@ -1,0 +1,57 @@
+<!--index.wxml-->
+
+<view class="background" style="width: 755rpx; height: 1182rpx; display: block; box-sizing: border-box">
+  <textarea
+    style="position: relative; left: 47rpx; top: 50rpx; width: 638rpx; height: 746rpx; display: block; box-sizing: border-box; font-size: 150rpx"
+    class="textarea">{{text}}</textarea>
+  <p class="msg"
+    style="width: 570rpx; height: 80rpx; display: block; box-sizing: border-box; position: relative; left: 80rpx; top: 80rpx">
+    在上面编辑好宿舍号和要的东西后点按下方按钮分享至群内并付款</p>
+  <p class="copyright"
+    style="position: relative; left: 80rpx; top: 678rpx; display: block; width: 570rpx; height: 70rpx; box-sizing: border-box">
+    Copyright 5#311 快速的飓风.
+    2021</p>
+  <button style="position: relative; left: -12rpx; top: 67rpx" open-type="share" class="share">分享</button>
+
+  <image src="../付款码/微信付款码.jpg"
+    style="width: 200rpx; height: 200rpx; display: inline-block; box-sizing: border-box; position: relative; left: 104rpx; top: 100rpx">
+  </image>
+  <image src="../付款码/支付宝付款码.jpg"
+    style="width: 200rpx; height: 200rpx; display: inline-block; box-sizing: border-box; position: relative; left: -96rpx; top: 324rpx">
+  </image>
+
+  <p
+    style="position: relative; left: 332rpx; top: -108rpx; display: block; width: 318rpx; height: 200rpx; box-sizing: border-box">
+    截图后打开相册并扫描此图以用
+  <div style="color:red;">微信支付 </div>付款</p>
+  <p
+    style="position: relative; left: 332rpx; top: -78rpx; height: 200rpx; width: 292rpx; display: block; box-sizing: border-box">
+    截图后打开相册并扫描此图以用
+  <div style="color:red;">支付宝 </div>付款</p>
+
+  <!--
+<button
+    style="position: relative; left: -183rpx; top: 122rpx; width: 296rpx; height: 97rpx; display: block; box-sizing: border-box" class="moshahou" bindtap="moshahou" open-type="share">磨砂猴</button>
+  <button
+    style="position: relative; left: 169rpx; top: 26rpx; width: 296rpx; height: 97rpx; display: block; box-sizing: border-box" class="cuchangle" bindtap="cuchangle" open-type="share">粗长乐</button>
+  <button
+    style="position: relative; left: -183rpx; top: 61rpx; width: 296rpx; height: 97rpx; display: block; box-sizing: border-box" class="changbaishan" bindtap="changbaishan" open-type="share">长白山</button>
+  <button
+    style="position: relative; left: 169rpx; top: -36rpx; width: 296rpx; height: 97rpx; display: block; box-sizing: border-box" class="liqun" bindtap="liqun" open-type="share">利
+    群</button>
+  <button
+    style="position: relative; left: -183rpx; top: 3rpx; width: 296rpx; height: 97rpx; display: block; box-sizing: border-box" class="xuanhemen" bindtap="xuanhemen" open-type="share">炫赫门</button>
+  <button
+    style="position: relative; left: 169rpx; top: -94rpx; width: 296rpx; height: 97rpx; display: block; box-sizing: border-box" class="furongwang" bindtap="furongwang" open-type="share">芙蓉王</button>
+  <button
+    style="position: relative; left: -8rpx; top: 45rpx; width: 225rpx; height: 97rpx; display: block; box-sizing: border-box" class="dayin" bindtap="dayin" open-type="share">打
+    印</button>
+  <button
+    style="position: relative; left: -218rpx; top: 90rpx; width: 225rpx; height: 97rpx; display: block; box-sizing: border-box" class="fuyin" bindtap="fuyin" open-type="share">复
+    印</button>
+  <button
+    style="position: relative; left: 218rpx; top: -10rpx; width: 225rpx; height: 99rpx; display: block; box-sizing: border-box" class="caomiao" bindtap="saomiao" open-type="share">扫
+    描</button>
+    -->
+
+</view>
