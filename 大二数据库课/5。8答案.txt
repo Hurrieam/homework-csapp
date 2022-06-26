@@ -1,0 +1,43 @@
+2.select * from student limit 1,3;
+3.select Num,name,bumen from student;
+4.select * from student where bumen='计算机系' or bumen = '英语系';
+  select * from student where bumen in ('计算机系','英语系'); = any；
+5.select * from student where year(now())-birthday between 28 and 32;
+  select * from student where year(now())-birthday>=28 and year(now  ())-birthday <=32;
+6.select bumen,count(num) as sum_of_bumen from student group by bumen;
+7.select c_name,max(grade) from score group by c_name;
+12.select c_name,avg(grade) from score group by c_name;
+15.select c_name,grade from score where c_name='计算机' order by grade desc;
+8.select c_name,grade from score where stu_id in(
+   select Num from student where name = '李五一');
+   select c_name,grade from student,score where name= '李五一' and      student.Num=score.stu_id;
+9.select num,name,sex,birthday,bumen,address,id,c_name,grade from student left join score on student.num=score.stu_id;
+10.select name,sum(grade) from student left join score on student.num=score.stu_id group by num;
+13.select * from student,score where student.num=score.stu_id and c_name='计算机'     and grade<95;
+   select * from student where num in( select stu_id from score where c_name='计算机'   and grade<95);
+14.select * from student where num in(
+    select stu_id from score where c_name = '计算机' and stu_id in (
+      select stu_id from score wehre c_name= '英语'));
+   select a.* from student a, score b, score c
+    where a.num=b.stu_id
+    and b.c_name = '计算机'
+    and a.num=c.stu_id 
+    and c.c_name = '英语';
+17.select name,bumen,c_name,grade from student,score where (name like '张%' 
+   or name like '王%') and student.num=score.stu_id;
+18. select name,year(now())-birthday,bumen,c_name,grade from student,score where      address like '湖南%'  and student.num=score.stu_id;
+
+4.(1) select * from Readers order by bday;
+  (2) select distinct pubcompany from Books;
+(3) select * from Books where pubcompany = '清华大学出版社' and price between 50 and 100;
+(4) select bookid,classid,bookname,price from Books where bookname like '%数据库%';
+(5) select pubcompany ,avg(price) from Books group by pubcompany;
+(6) select rno from L_R group by rno having count(*)>=3;
+(7) select bookname from L_R,Books where L_R.bookid=Books.bookid and rno = 1011050501;
+(8) select * from Readers where rno in(
+       select rno from L_R where bookid in (
+          select bookid from Books where pubcompany='清华大学出版社' and bookname = '数            据库原理与应用'));
+(9) select rname from Readers where rno not in( select rno from L_R);
+(10) delete from Readers where rno = 1011050502;
+(12) insert into
+(13) update Readers set dept='信息管理与信息系统' where rno = 1011050501;
