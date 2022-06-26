@@ -1,0 +1,23 @@
+.button{
+    background-color: gray;
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 25%;
+    position: absolute;
+    border-color: blue;
+    border-style: solid;
+}
+
+.button:hover{
+    background-color: deepskyblue;
+    color: greenyellow;
+}
+
+.button:active{
+    background-color: black;
+    color: white;
+}
