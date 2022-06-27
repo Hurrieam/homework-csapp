@@ -1,0 +1,120 @@
+*:focus{
+    outline: none;
+}
+
+.contact_form{
+    width: 70%;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+.tree{
+    position: relative;
+    top: 420px;
+    left: 260px;
+}
+
+.contact_form h2, .contact_form span{
+    font-family: Georgia, Times, serif;
+}
+
+.contact_form ul{
+    width: 750px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact_form li{
+    padding: 12px;
+    border-bottom: 1px #eee solid;
+}
+
+.contact_form li:first-child, .contact_form li:last-child{
+    border-bottom: 1px #777 solid;
+}
+
+.contact_form h2{
+    margin: 0;
+}
+
+.contact_form span{
+    width: 150px;
+    margin-top: 3px;
+    display: inline-block;
+    padding: 3px;
+}
+
+.usually input{
+    height: 20px;
+    width: 220px;
+    padding: 5px 8px;
+}
+
+.contact_form textarea{
+    padding: 8px;
+    width: 300px;
+}
+
+.contact_form button{
+    margin-left: 156px;
+}
+
+.special input{
+    height: 15px;
+    width: 40px;
+    padding: 5px 8px;
+}
+
+.usually input, .usually textarea{
+    background: #ffffff url("../images/attention.png") 98% no-repeat;
+    border: 1px #aaaaaa solid;
+    box-shadow: 0 0 3px #cccccc, 0 10px 15px #eeeeee inset;
+    border-radius: 2px;
+    transition: padding .25s;
+}
+
+.usually input:focus, .usually textarea:focus{
+    background: #ffffff;
+    border: 1px #555555 solid;
+    box-shadow: 0 0 3px #aaaaaa;
+    padding-right: 70px;
+}
+
+button.submit{
+    background: #68b12f linear-gradient(top, #68b12f, #50911e);
+    border: #509111 solid;
+    border-bottom: 1px #5b992b solid;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+button.submit:hover{
+    opacity: .85;
+    cursor: pointer;
+}
+
+button.submit:active{
+    border: 1px #20911e solid;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+.usually input:focus:invalid, .usually textarea:focus:invalid{
+    background: #ffffff url("../images/warn.png") 58% center no-repeat;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+
+.usually input:required:valid, .usually textarea:required:valid{
+    background: #ffffff url("../images/right.png") 98% center no-repeat;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+/* 20220513 响应式第十三次作业 软件191 胡瑞平 19031198 */

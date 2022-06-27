@@ -1,0 +1,8 @@
+@font-face {
+    font-family: MyFont;
+    src: url("../fonts/demo2-1/书法.ttf");
+}
+
+.font-test{
+    font-family: MyFont;
+}

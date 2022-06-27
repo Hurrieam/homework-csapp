@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: "Roboto", serif;
+    font-size: 100%;
+    background: url("../images/2.png") 0 0 repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}
+
+h1{
+    font-family: "微软雅黑", serif;
+    font-size: 3em;
+    color: #3c2f24;
+    text-align: center;
+    margin: 2em 0 1em 0;
+}
+
+.element{
+    width: 60%;
+    margin: 0 auto 7em;
+    padding: 2em;
+    display: flex;
+}
+
+.element-left{
+    margin: 0 1.5%;
+    order: 1;
+    flex: 3.3;
+}
+
+.element-right{
+    margin: 0 1.5%;
+    order: 2;
+    flex: 3.3;
+}
+
+.element-last{
+    margin: 0 1.5%;
+    order: 3;
+    flex: 3.3;
+}
+
+.edit{
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+form{
+    padding: 10% 4% 8% 4%;
+}
+
+form li{
+    list-style: none;
+    width: 100%;
+    font-weight: 500;
+    border: 1px #ccc solid;
+    background: #ffffff;
+    margin: 1em 0;
+}
+
+input[type="text"]{
+    width: 70%;
+    padding: 1em 0 1em 1.7em;
+    font-size: 15px;
+    font-weight: 500;
+    color: #858282;
+}
+
+.user1{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin: 12px 0 0 0;
+    border-right: 1px #999 solid;
+    padding: 5px 16px 0 0;
+    background: url("../images/user.png") 8px 2px no-repeat;
+}
+
+.lock1{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin: 12px 0 0 0;
+    border-right: 1px #999 solid;
+    padding: 5px 16px 0 0;
+    background: url("../images/lock.png") 8px 2px no-repeat;
+}
+
+.submit input[type="submit"]{
+    width: 100%;
+    padding: 21px 20px;
+    background: #ef8d32;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.teddy-bear{
+    text-align: center;
+}
+
+.teddy-text{
+    background-color: #ffffff;
+    padding: 1em 1em;
+}
+
+.teddy-text h4{
+    font-size: 1.2em;
+    color: #ee5a32;
+    margin: 0.5em 0 0;
+}
+
+.teddy-text img{
+    width: 60%;
+    padding: 8px;
+    border: 3px #ee5a32 solid;
+    border-radius: 70px;
+}
+
+.teddy-follow{
+    background: #ef8d32;
+    padding: 0.7em 0 0.7em 0;
+}
+
+.teddy-follow li{
+    display: inline-block;
+    width: 49%;
+    float: left;
+    text-align: center;
+}
+
+.teddy-follow li h3{
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.teddy-follow li p{
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.teddy-follow li.follow-h{
+    border-right: 1px #fff solid;
+}
+
+ul.content{
+    width: 100%;
+    margin: 0 auto;
+    background: #ef8d32;
+    font-weight: 100;
+}
+
+li.button a{
+    padding: 24px 27px;
+    margin: 0;
+    display: block;
+}
+
+li.button{
+    list-style: none;
+    text-align: left;
+}
+
+li.menu{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px #cd5f4a solid;
+}
+
+li.button a span{
+    margin-right: 22px;
+}
+
+li.menu.info{
+    border-bottom: none;
+}
+
+li.button i{
+    display: block;
+    float: right;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background: #505771;
+    font-size: 13px;
+    font-style: normal;
+}
+
+.icon{
+    width: 25px;
+    height: 23px;
+    display: inline-block;
+    float: left;
+}
+
+.icon{
+    background: url("../images/img-sprite.png") -1px -2px no-repeat;
+}
+
+.start{
+    background: url("../images/img-sprite.png") -30px -4px no-repeat;
+}
+
+.msg{
+    background: url("../images/img-sprite.png") -62px -2px no-repeat;
+}
+
+.sign-out{
+    background: url("../images/img-sprite.png") -93px 2px no-repeat;
+}
+
+/* 20220506 响应式第十一次作业 软件191 胡瑞平 19031198 */

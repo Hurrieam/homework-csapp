@@ -1,0 +1,14 @@
+button{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    padding: 0.5em 2em 0.55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    border-radius: 0.5em;
+    background-color: #944bc8;
+    color: white;
+}
+
+/* 20220608 响应式第十六次作业 软件191 胡瑞平 19031198 */

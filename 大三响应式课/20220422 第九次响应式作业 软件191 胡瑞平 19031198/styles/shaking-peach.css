@@ -1,0 +1,131 @@
+.act_wrapper{
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    /* border: 5px #000 solid; */
+}
+
+.act_bg{
+    background: url("../images/bg.jpg") 100% 0 no-repeat;
+    /* border: 5px red solid; */
+    height: 750px;
+    width: 1920px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1347px;
+    z-index: 1;
+}
+
+.mod_style{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 870px;
+    height: 560px;
+    /* border: 5px blue solid; */
+    z-index: 2;
+}
+.mod_style p{
+    font-family: "微软雅黑", serif;
+    font-size: 40px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+}
+
+.peach{
+    position: absolute;
+    width: 90px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    /* border: 5px #000 solid; */
+    background: url("../images/peach.png") 0 0 no-repeat;
+
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.peach1{
+    background-position: 0 0;
+    top: 160px;
+    left: 120px;
+}
+.peach2{
+    background-position: 0 -115px;
+    top: 160px;
+    left: 256px;
+}
+.peach3{
+    background-position: 0 -215px;
+    top: 160px;
+    left: 365px;
+}
+.peach4{
+    background-position: 0 -320px;
+    top: 160px;
+    left: 400px;
+}
+.peach5{
+    background-position: 0 -430px;
+    top: 160px;
+    left: 500px;
+}
+.peach6{
+    background-position: 0 -530px;
+    top: 160px;
+    left: 600px;
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(2deg);
+        transform-origin: 50% 0;
+    }
+
+    20%{
+        transform: rotate(10deg);
+        transform-origin: 50% 0;
+    }
+
+    40%{
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+
+    60%{
+        transform: rotate(-2deg);
+        transform-origin: 50% 0;
+    }
+
+    80%{
+        transform: rotate(-10deg);
+        transform-origin: 50% 0;
+    }
+
+    100%{
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+}
+.shake1{
+    animation-duration: 2.5s;
+}
+.shake2{
+    animation-duration: 1s;
+}
+.shake3{
+    animation-duration: 5s;
+}
+.shake4{
+    animation-duration: 1.5s;
+}
+.shake5{
+    animation-duration: 2s;
+}
+.shake6{
+    animation-duration: 3s;
+}
+
+/* 20220422 第九次响应式作业 软件191 胡瑞平 19031198 */

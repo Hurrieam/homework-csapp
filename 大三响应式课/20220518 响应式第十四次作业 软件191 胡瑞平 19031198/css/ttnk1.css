@@ -1,0 +1,238 @@
+/* 1 body部分 */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* 2.1 网页首部部分——header部分 */
+header{
+    width: 100%;
+    height: 580px;
+    background: #34415f url("../images/container.png");
+    background-size: cover;
+}
+
+/* 2.2 海报容器部分 */
+div.poster-container{
+    width: 1139px;
+    height: 580px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* 2.3 海报部分 */
+div.poster{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/banner.jpg") no-repeat top right;
+
+    animation: showPoster;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes showPoster {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 2.4 遮罩层部分 */
+div.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/mask.png") no-repeat top right;
+}
+
+/* 2.5.1 海报左侧影片介绍部分——影片介绍的容器部分 */
+div.content{
+    position: absolute;
+}
+/* 2.5.2 介绍的内容部分 */
+dl.title{
+    color: #fffffe;
+    position: relative;
+    z-index: 2;
+}
+/* 2.5.3 标题 泰坦尼克号 的部分 */
+dl.title>h1{
+    font-weight: 300;
+    font-size: 2.56em;
+    padding-left: 1.25em;
+}
+/* 2.5.4 标题下面的介绍文字部分 */
+dl.title>dd{
+    display: block;
+    overflow: hidden;
+    width: 42%;
+    font-size: 0.9em;
+    text-indent: 1.8em;
+    color: #eee;
+    line-height: 200%;
+}
+
+/* 3.1 网页主体部分——主体容器部分 */
+article{
+    width: 1119px;
+    color: #ffffff;
+    position: relative;
+    margin: -200px auto 50px;
+}
+/* 3.2 小标题部分 */
+h3{
+    padding-left: 1%;
+    width: 15%;
+    float: left;
+    border-left: #4f9cee 20px solid;
+    border-bottom: #4f9cee 2px solid;
+}
+
+/* 4.1 主要演员列表部分——定义列表单元部分*/
+dl.majorActorList>dd{
+    display: inline-block;
+}
+/* 4.2 文字链接部分 */
+dl.majorActorList a{
+    float: left;
+    display: block;
+    width: 99px;
+    line-height: 210%;
+    text-decoration: none;
+    color: #333;
+    text-shadow: 1px 1px 1px lightgray;
+    /* 过渡 all .5s*/
+}
+/* 4.3 图片部分 */
+dl.majorActorList img{
+    box-shadow: 1px 1px 1px gray;
+    border-radius: 5px;
+}
+/* 4.4 transform练习 */
+dl.majorActorList>dd:nth-child(1):hover>a:nth-of-type(1){
+    rotate: 360deg;
+    scale: 1.3;
+    /*
+    skew: -15deg;
+    rotateY: 180deg;
+    rotateZ: 360deg;
+     */
+}
+
+/* 5.1 导航条部分——无序列表 */
+nav>ul{
+    position: relative;
+    line-height: 300%;
+    list-style: none;
+    height: 3em;
+    margin: 0;
+    padding: 0 0 0 1em;
+    background-color: rgb(79,156,238);
+}
+/* 5.2 无序列表内的元素 */
+nav>ul>li{
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+/* 5.3 无序列表内元素后面的div */
+nav>ul>li~div{
+    background-color: #eb7b55;
+    width: 80px;
+    height: 3em;
+    /* 过渡 left .5s*/
+    position: absolute;
+    top: 0;
+    left: 1em;
+}
+/* 5.4 无序列表内的元素内的链接 */
+nav>ul>li>a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+}
+/* 5.5.1 当鼠标悬浮到相应菜单项时div的过渡动作——默认div在第一菜单项的位置 */
+/* 当鼠标悬浮在第二菜单项时div的样式 */
+nav>ul>li:nth-child(2):hover~div{ left: 6em; }
+/* 当鼠标悬浮在第三菜单项时div的样式 */
+nav>ul>li:nth-child(3):hover~div{ left: 11em; }
+/* 当鼠标悬浮在第四菜单项时div的样式 */
+nav>ul>li:nth-child(4):hover~div{ left: 16em; }
+/* 当鼠标悬浮在第五菜单项时div的样式 */
+nav>ul>li:nth-child(5):hover~div{ left: 21em; }
+
+/* 6.1 基本信息 部分——对于基本信息的容器 */
+.fundamental{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+/* 6.2 基本信息列表 */
+.fundamental>dl{
+    flex: 1;
+    font-size: 0.9em;
+}
+/* 6.3 基本信息列表中的信息类型 */
+.fundamental>dl>dt{
+    float: left;
+    padding: 10px 5% 10px 0;
+    margin: 0;
+    color: gray;
+    width: 15%;
+    font-weight: bold;
+    border-bottom: 2px dotted darkgray;
+}
+/* 6.4 基本信息列表中的信息内容 */
+.fundamental>dl>dd{
+    float: left;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    margin: 0;
+    border-bottom: 2px dotted darkgray;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: scroll;
+}
+
+/* 7 剧情简介 部分 */
+/*
+border: 10px solid transparent;
+border-image: 27 27 27 27 url("../images/border.png") stretch;
+ */
+
+/* 8.1 角色介绍 部分——对于 角色介绍 的无序列表 */
+.actorList{
+    list-style: none;
+}
+/* 8.2 对于 角色介绍 的无序列表中的列表 */
+.actorList>li{
+    padding: 0.5em 0;
+    border-bottom: 1px dashed gray;
+}
+/* 8.3 对于 角色介绍 的人物图片 */
+.actorList img{
+    width: 135px;
+    float: left;
+}
+/* 8.4 对于角色介绍 中的定义列表 */
+.actorList dl{
+    float: left;
+    width: 60%;
+    margin-left: 40px;
+}
+
+/* 9 幕后花絮 部分 */
+.highlight{
+    border-image: 27 27 27 27 url("../images/border.png") stretch;
+    border: 10px;
+}
+
+/* 20220518 响应式第十四次作业 软件191 胡瑞平 19031198 */

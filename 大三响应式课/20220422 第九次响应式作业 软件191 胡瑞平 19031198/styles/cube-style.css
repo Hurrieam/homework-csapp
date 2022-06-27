@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.stage{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin: 100px auto;
+    transform: rotateX(-30deg) rotateY(30deg);
+}
+
+.stage>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .5;
+}
+
+.box1{
+    background-color: aqua;
+    transform: translateZ(100px);
+}
+.box2{
+    background-color: yellowgreen;
+    transform: translateZ(-100px);
+}
+.box3{
+    background-color: blue;
+    transform: rotateY(90deg) translateZ(100px);
+}
+.box4{
+    background-color: pink;
+    transform: rotateY(90deg) translateZ(-100px);
+}
+.box5{
+    background-color: brown;
+    transform: rotateX(90deg) translateZ(100px);
+}
+.box6{
+    background-color: gold;
+    transform: rotateX(90deg) translateZ(-100px);
+}
+
+/* 20220422 第九次响应式作业 软件191 胡瑞平 19031198 */

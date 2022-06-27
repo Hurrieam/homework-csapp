@@ -1,0 +1,29 @@
+/* 翻转 */
+
+img {
+    transform: rotateY(180deg);
+}
+
+.infos,
+.title {
+    text-align: right;
+}
+
+.day {
+    left: 10px;
+}
+
+.plcRouteList .bottom .face {
+    float: right;
+}
+
+.switchStyle {
+    text-align: center;
+}
+
+.qui-aside {
+    right: 100px;
+}
+
+
+/* 响应式第三次作业 软件191 胡瑞平 19031198 */

@@ -1,0 +1,65 @@
+/*
+.view-header{
+    width: 1176px;
+    height: 432px;
+    position: relative;
+    overflow: hidden;
+}
+.view-header:hover .hover-header{
+    height: 120px;
+    transform: rotate(0deg);
+}
+.view-header::before{
+    content: "";
+    width: 360px;
+    height: 360px;
+    background-color: rgba(133,203,190,.5);
+    position: absolute;
+    top: -240px;
+    right: 0;
+    transform: rotate(55deg) translateX(60px);
+    transform-origin: 100% 0;
+    transition: all .5s ease .3s;
+}
+.view-header:hover::before{
+    top: 0;
+}
+.view-header::after{
+    content: "";
+    width: 360px;
+    height: 360px;
+    background-color: rgba(133,203,190,.5);
+    position: absolute;
+    bottom: -240px;
+    left: 0;
+    transform: rotate(55deg) translateX(-60px);
+    transform-origin: 0 100%;
+    transition: all .5s ease .3s;
+}
+.view-header:hover::after{
+    bottom: 0;
+}
+
+.hover-header{
+    width: 30%;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    color: #fff;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    transform: rotate(50deg);
+    transition: all .5s;
+    z-index: 1000;
+}
+
+.hover-header img{
+    color: #fff;
+    border-bottom: 2px solid rgba(76,179,77,.5);
+    padding-bottom: 10px;
+}
+*/
+
+/* 多肉商城 — 20220415 响应式第八次作业 软件191 胡瑞平 19031198 */

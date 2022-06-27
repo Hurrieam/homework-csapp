@@ -1,0 +1,16 @@
+.pinwheel{
+    text-align: center;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateZ(-360deg);
+    }
+}
+
+/* 20220422 第九次响应式作业 软件191 胡瑞平 19031198 */

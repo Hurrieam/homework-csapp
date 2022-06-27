@@ -1,0 +1,49 @@
+body{
+    font-size: 24px;
+    background: #ffffff;
+}
+
+header, footer{
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+    border: 2px #ffba41 solid;
+    border-radius: 7pt;
+}
+
+.main{
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main>article{
+    margin: 4px;
+    padding: 5px;
+    border-radius: 7px;
+    background: #719dca;
+    order: 2;
+    flex: 3;
+}
+
+.main>nav{
+    margin: 4px;
+    padding: 5px;
+    border-radius: 7pt;
+    background: #ffba41;
+    order: 1;
+    flex: 1;
+}
+
+.main>aside{
+    margin: 4px;
+    padding: 5px;
+    border-radius: 7pt;
+    background: #ffba41;
+    order: 3;
+    flex: 1;
+}
+
+/* 20220506 响应式第十一次作业 软件191 胡瑞平 19031198 */

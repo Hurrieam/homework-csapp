@@ -1,0 +1,15 @@
+header:hover {
+    box-shadow: #aaa 0 0 15px;
+    top: -5px;
+    width: 1230px;
+    padding-left: 0;
+}
+
+header {
+    position: relative;
+    transition: all .5s;
+    top: 0;
+}
+
+
+/* 20220413 响应式第七次作业 软件191 胡瑞平 19031198 */

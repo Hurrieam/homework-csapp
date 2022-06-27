@@ -1,0 +1,49 @@
+.peach1{
+    display: block;
+    position: relative;
+    width: 90px;
+    height: 100px;
+    background: url("../images/peach.png") 0 0 no-repeat;
+}
+
+.peach2{
+    display: block;
+    position: relative;
+    width: 90px;
+    height: 100px;
+    background: url("../images/peach.png") 0 -100px no-repeat;
+}
+
+.peach3{
+    display: block;
+    position: relative;
+    width: 90px;
+    height: 100px;
+    background: url("../images/peach.png") 0 -210px no-repeat;
+}
+
+.peach4{
+    display: block;
+    position: relative;
+    width: 90px;
+    height: 100px;
+    background: url("../images/peach.png") 0 -320px no-repeat;
+}
+
+.peach5{
+    display: block;
+    position: relative;
+    width: 90px;
+    height: 100px;
+    background: url("../images/peach.png") 0 -430px no-repeat;
+}
+
+.peach6{
+    display: block;
+    position: relative;
+    width: 90px;
+    height: 100px;
+    background: url("../images/peach.png") 0 -530px no-repeat;
+}
+
+/* 20220422 第九次响应式作业 软件191 胡瑞平 19031198 */

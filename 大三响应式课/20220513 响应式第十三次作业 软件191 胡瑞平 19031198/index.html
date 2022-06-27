@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+
+<div>
+    <img src="images/tree.jpg" alt="">
+    <form action="" method="post" class="contact_form" name="contact_form">
+        <ul>
+            <li class="usually">
+                <h2>用户注册</h2>
+            </li>
+            <li class="usually">
+                <span>昵称</span>
+                <label for="name"></label><input type="text" id="name" name="name" required>
+            </li>
+            <li class="usually">
+                <span>注册邮箱</span>
+                <label>
+                    <input type="email" name="email" placeholder="javin@example.com" required>
+                </label>
+            </li>
+            <li class="special">
+                <span>性别</span>
+                <input type="radio" name="gender" id="male" checked><label for="male">男</label>
+                <input type="radio" name="gender" id="female"><label for="female">女</label>
+            </li>
+            <li class="usually">
+                <span>年龄</span>
+                <label>
+                    <input type="number" name="age" required>
+                </label>
+            </li>
+            <li class="special">
+                <span>兴趣爱好</span>
+                <input type="checkbox" id="football" name="interest"><label for="football">足球</label>
+                <input type="checkbox" id="basketball" name="interest"><label for="basketball">篮球</label>
+                <input type="checkbox" id="swimming" name="interest"><label for="swimming">游泳</label>
+                <input type="checkbox" id="singing" name="interest"><label for="singing">唱歌</label>
+                <input type="checkbox" id="running" name="interest"><label for="running">跑步</label>
+                <input type="checkbox" id="yoga" name="interest"><label for="yoga">瑜伽</label>
+            </li>
+            <li class="usually">
+                <span>自我介绍</span>
+                <label>
+                    <textarea name="introduction" class="message" cols="200" rows="10" placeholder="Please enter your message"></textarea>
+                </label>
+            </li>
+            <li>
+                <button class="submit" type="submit">立即注册</button>
+            </li>
+        </ul>
+    </form>
+</div>
+
+</body>
+</html>
+
+<!-- 20220513 响应式第十三次作业 软件191 胡瑞平 19031198 -->

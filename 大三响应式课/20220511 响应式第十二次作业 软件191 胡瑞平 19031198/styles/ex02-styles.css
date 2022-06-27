@@ -1,0 +1,78 @@
+body{
+    background: url("../images/1.png") center center no-repeat fixed;
+    background-size: cover;
+    padding-top: 20px;
+}
+
+form{
+    width: 343px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px rgba(0,0,0,.2) solid;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+input{
+    width: 276px;
+    height: 48px;
+    border: 1px rgba(255,255,255,.4) solid;
+    border-radius: 4px;
+    display: block;
+    font-size: 18px;
+    color: white;
+    padding-left: 45px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,.4);
+}
+
+.border-radius{
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    background: url("../images/2.jpg") center center no-repeat;
+    border: 5px rgba(255,255,255,.4) solid;
+    border-radius: 200px;
+}
+
+input[type=submit]{
+    cursor: pointer;
+}
+
+input:focus{
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    overflow: hidden;
+}
+
+.btn{
+    width: 138px;
+    height: 44px;
+    border-radius: 6px;
+    margin: 0 auto;
+    background-color: #00b0dc;
+    padding: 11px 21px;
+    color: #e1e1e1;
+}
+
+.btn:hover{
+    border: 1px #253737 solid;
+    text-shadow: 0 1px 0 #333;
+    background-color: #00b0dc;
+    color: #ffffff;
+}
+
+.btn:active{
+    margin-top: 1px;
+    border: 1px #253737 solid;
+    text-shadow: 0 1px 0 #333;
+    background-color: #00b0dc;
+    color: #ffffff;
+}
+
+/* 20220511 响应式第十二次作业 软件191 胡瑞平 19031198 */
